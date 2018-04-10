@@ -1,0 +1,245 @@
+<!--http://coin.ninesquares.biz/korabli/calculator.html-->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>ЖК Корабли</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,600i,700,700i,800&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700,700i" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/jquery.mCustomScrollbar.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/jquery-ui.min.css"/>
+    <link rel="stylesheet" href="css/slick.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="css/media.css"/>
+</head>
+
+<body>
+    <header class="calculator">
+        <div class="logo">
+            <a class="white" href="/"><img src="img/w_logo.png" alt="img"></a>
+            <a class="blue" href="/"><img src="img/b_logo.png" alt="img"></a>
+        </div>
+        <div class="menu-block">
+            <a href="#" class="btn-menu-open">
+                <span></span><span></span><span></span>Oткрыть меню
+            </a>
+            <div class="kor-menu">
+                <a href="#" class="btn-menu-close">
+                    <span class="btn-close"></span> <span>Закрыть меню</span>
+                </a>
+                <ul class="lincks">
+                    <li><a href="#"><span>На главную</span><span class="image"><img src="img/lincks1.png" alt="img</span>"></span></a></li>
+                    <li><a href="#"><span>Выбор квартир</span><span class="image"><img src="img/lincks2.png" alt="img"></span></a></li>
+                    <li><a href="#"><span>Ипотека</span><span class="image"><img src="img/lincks3.png" alt="img"></span></a></li>
+                    <li><a href="#"><span>Документы</span><span class="image"><img src="img/lincks4.png" alt="img"></span></a></li>
+                </ul>
+                <ul class="menu">
+                    <li class="active"><a href="#">О застройщике</a></li>
+                    <li class="folder"><a href="#">О проекте</a>
+                        <ul>
+                            <li><a href="#">Расположение </a></li>
+                            <li><a href="#"> О ЖК КОрабли</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">выбор квартир</a></li>
+                    <li class="folder">
+                        <a href="#">Динамика строительства</a>
+                        <ul>
+                            <li><a href="#">Фотоотчеты</a></li>
+                            <li><a href="#">Онлайн камера</a></li>
+                        </ul>
+                    </li>
+                    <li class="folder">
+                        <a href="#">Галерея</a>
+                        <ul>
+                            <li><a href="#">3D Визуализация</a></li>
+                            <li><a href="#">3D виртуальный тур</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="kor-choice-home calculator param-open">
+        <div id="rotate-device">
+            <div class="middle">
+                <img src="img/rotate__device.svg">
+            </div>
+        </div>
+        <div class="title">
+            <h3>Калькулятор ипотеки</h3>
+            <a href="#">
+                <span>Расчеты носят приблизительный характер,
+пожалуйста, уточняйте условия кредитования в банках</span>
+            </a>
+        </div>
+        <div class="kor-param calculator">
+            <div class="param-form">
+                <form method="post" action="#" class="param-calculator">
+                    <div class="param-price">
+                        <h6 class="param-title" >Стоимость квартиры:</h6>
+                        <p>
+                            <input class="param-input" type="text" id="amount-max" readonly placeholder="0"><label><i class="fa fa-rub" aria-hidden="true"></i></label>
+                        </p>
+                        <div id="slider-price"></div>
+                    </div>
+                    <div class="param-oun-cash">
+                        <h6 class="param-title"><span class="media-1920">Собственные средства:</span><span class='media-1366'>Собств. средства:</span>  <span class="part">88%</span></h6>
+                        <p>
+                            <input class="param-input" type="text" id="amount-max-first" readonly placeholder="0"><label><i class="fa fa-rub" aria-hidden="true"></i></label>
+                        </p>
+                        <div id="slider-oun-cash"></div>
+                    </div>
+                    <div class="param-years">
+                        <h6 class="param-title">Срок кредита:</h6>
+                        <p>
+                            <input class="param-input" type="text" id="amount-max-year" readonly placeholder="0">
+                            <label>лет</label>
+                        </p>
+                        <div id="slider-years"></div>
+                    </div>
+                    <div class="param-resalt">
+                        <h6 class="param-title">Сумма кредита</h6>
+                        <div class="resalt"><span class="value">520365</span><label><i class="fa fa-rub" aria-hidden="true"></i></label> </div>
+                    </div>
+                    <button type="submit">Рассчитать</button>
+                </form>
+                <div class="table param-calculator">
+                    <div class="thead">
+                        <div class="tr">
+                            <div class="td" >Банк</div>
+                            <div class="td" >Сумма кредита <span class="top-i">руб.</span></div>
+                            <div class="td" >Срок <span class="top-i">месяц</span></div>
+                            <div class="td" >Ставка <span class="top-i">2</span></div>
+                            <div class="td price-text">Ежемесячный платеж <span class="top-i">руб</span></div>
+                        </div>
+                    </div>
+                    <div class="tbody">
+                        <a class="tr" href="td1">
+                            <span class="td"><img src="img/banc-linc.png" alt="img"></span>
+                            <span class="td">3 000 000</span>
+                            <span class="td">36</span>
+                            <span class="td">11,5</span>
+                            <span class="price td">1000150</span>
+                        </a>
+                        <a class="tr" href="td2">
+                            <span class="td"><img src="img/banc-linc.png" alt="img"></span>
+                            <span class="td">3 000 000</span>
+                            <span class="td">36</span>
+                            <span class="td">11,5</span>
+                            <span  class="price td">25 000</span>
+                        </a>
+                        <a class="tr" href="td3">
+                            <span class="td"><img src="img/banc-linc.png" alt="img"></span>
+                            <span class="td">3 000 000</span>
+                            <span class="td">36</span>
+                            <span class="td">11,5</span>
+                            <span class="price td">25 000</span>
+                        </a>
+                        <a class="tr" href="td4">
+                            <span class="td"><img src="img/banc-linc.png" alt="img"></span>
+                            <span class="td">3 000 000</span>
+                            <span class="td">36</span>
+                            <span class="td">11,5</span>
+                            <span class="price td">25 000</span>
+                        </a>
+                        <a class="tr" href="td5">
+                            <span class="td"><img src="img/banc-linc.png" alt="img"></span>
+                            <span class="td">3 000 000</span>
+                            <span class="td">36</span>
+                            <span class="td">11,5</span>
+                            <span class="price td">25 000</span>
+                        </a>
+                        <a class="tr" href="td6">
+                            <span class="td"><img src="img/banc-linc.png" alt="img"></span>
+                            <span class="td">3 000 000</span>
+                            <span class="td">36</span>
+                            <span class="td">11,5</span>
+                            <span class="price td">25 000</span>
+                        </a>
+                        <a class="tr" href="td7">
+                            <span class="td"><img src="img/banc-linc.png" alt="img"></span>
+                            <span class="td">3 000 000</span>
+                            <span class="td">36</span>
+                            <span class="td">11,5</span>
+                            <span  class="price td">25 000</span>
+                        </a>
+                        <a class="tr" href="td8">
+                            <span class="td"><img src="img/banc-linc.png" alt="img"></span>
+                            <span class="td">3 000 000</span>
+                            <span class="td">36</span>
+                            <span class="td">11,5</span>
+                            <span class="price td">25 000</span>
+                        </a>
+                        <a class="tr" href="td9">
+                            <span class="td"><img src="img/banc-linc.png" alt="img"></span>
+                            <span class="td">3 000 000</span>
+                            <span class="td">36</span>
+                            <span class="td">11,5</span>
+                            <span class="price td">25 000</span>
+                        </a>
+                        <a class="tr" href="td10">
+                            <span class="td"><img src="img/banc-linc.png" alt="img"></span>
+                            <span class="td">3 000 000</span>
+                            <span class="td">36</span>
+                            <span class="td">11,5</span>
+                            <span class="price td">25 000</span>
+                        </a>
+                        <a class="tr" href="td11">
+                            <span class="td"><img src="img/banc-linc.png" alt="img"></span>
+                            <span class="td">3 000 000</span>
+                            <span class="td">36</span>
+                            <span class="td">11,5</span>
+                            <span class="price td">25 000</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="brush"><a href="#"><img src="img/brush.png" alt="img"><span>Квартиры с отделкой</span></a></div>
+    </div>
+
+    <footer>
+        <div class="foot-left">
+            <div class="social">
+                <a href="#"><img src="img/fb.png" alt="alt"></a>
+                <a href="#"><img src="img/bk.png" alt="alt"></a>
+                <a href="#"><img src="img/ok.png" alt="alt"></a>
+                <a href="#"><img src="img/yt.png" alt="alt"></a>
+                <a href="#"><img src="img/ins.png" alt="alt"></a>
+            </div>
+            <div class="copyright">
+                Любая информация, представленная на данном сайте, носит исключительно информационный характер и ни при каких условиях не является публичной офертой, определяемой положениями статьи 437 ГК РФ.
+                <a href="#">Политика обработки персональных данных.</a>
+            </div>
+            <div class="author">
+                <a href="#">Создание сайта   <span>NNovgorod3D</span></a>
+            </div>
+        </div>
+        <div class="foot-right">
+            <div class="phone">
+                <span class="icon-phone"><i class="fa fa-phone" aria-hidden="true"></i></span>
+                <a href="tel:(831) 262-1-777"><span>(831) 262-1-777</span> </a>
+            </div>
+            <a href="#">Заказать звонок</a>
+            <div class="address">Нижний Новгород, пр. Ленина, 100 в</div>
+        </div>
+    </footer>
+
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+        <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="js/jquery.magnific-popup.js"></script>
+        <script type="text/javascript" src="js/slick.min.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+    </body>
+</html>
+
+

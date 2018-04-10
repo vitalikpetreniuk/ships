@@ -1,0 +1,119 @@
+<!--http://coin.ninesquares.biz/korabli/modal_windows.html-->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>ЖК Корабли</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700,700i" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="css/media.css"/>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="lw-modal-body open">
+        <a href="#" class="btn-menu-close">
+            <span class="btn-close lw-modal-close close-icon"></span> <span>Закрыть</span>
+        </a>
+        <div class="lw-modal-content">
+            <div class="contacts-phone-form">
+                <h1>Заказать звонок <span>Оставьте свои данные и мы Вам перезвоним</span></h1>
+                <form id="w1" action="#" method="post">
+                    <input type="hidden" name="_csrf" value="">
+                        <div class="form-group field-contactsphone-name required">
+                            <input type="text" id="contactsphone-name" class="form-control" name="ContactsPhone[name]" maxlength="255" placeholder="Ваше имя">
+                            <div class="help-block"></div>
+                    </div>
+                    <div class="form-group field-contactsletter-mail required">
+                    <input type="text" id="contactsphone-phone" class="form-control" name="ContactsPhone[mail]" maxlength="255" placeholder="+7 (___) ___-__-__">
+                    <div class="help-block"></div>
+                </div>
+                    <div class="form-group">
+                        <button type="submit">Отправить</button>
+                    </div>
+                    <p>Нажимая на кнопку, Вы принимаете <a href="#">Положение</a> и
+                        <a href="#">согласие</a> на обработку персональных данных.</p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="lw-modal-body open ">
+        <a href="#" class="btn-menu-close">
+            <span class="btn-close lw-modal-close close-icon"></span> <span>Закрыть</span>
+        </a>
+        <div class="lw-modal-content">
+            <div class="contacts-letter-form">
+                <h1>Написать письмо <span>Оставьте свои пожелания или задайте вопрос</span></h1>
+
+                <form id="w2" action="#" method="post">
+                    <input type="hidden" name="_csrf" value="">
+                    <div class="form-group field-contactsletter-name required">
+                        <input type="text" id="contactsletter-name" class="form-control" name="ContactsLetter[name]" maxlength="255" placeholder="Ваше имя">
+                        <div class="help-block"></div>
+                    </div>
+                    <div class="form-group field-contactsletter-mail required">
+                        <input type="text" id="contactsletter-phone" class="form-control" name="ContactsLetter[mail]" maxlength="255" placeholder="+7 (___) ___-__-__">
+                        <div class="help-block"></div>
+                    </div>
+                    <div class="form-group field-contactsletter-mail required">
+                        <input type="text" id="contactsletter-mail" class="form-control" name="ContactsLetter[mail]" maxlength="255" placeholder="Ваш e-mail"><div class="help-block"></div>
+                    </div>
+                    <div class="form-group field-contactsletter-message required">
+                        <textarea id="contactsletter-message" class="form-control" name="ContactsLetter[message]" rows="6" placeholder="Текст сообщения"></textarea><div class="help-block"></div>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit">Отправить</button>
+                    </div>
+                    <p>Нажимая на кнопку, Вы принимаете <a href="#">Положение</a> и
+                        <a href="#">согласие</a> на обработку персональных данных.</p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="lw-modal-body open">
+        <a href="#" class="btn-menu-close">
+            <span class="btn-close lw-modal-close close-icon"></span> <span>Закрыть</span>
+        </a>
+        <div class="lw-modal-content">
+            <div class="contacts-bron-form">
+                <h1>Заявка на бронь<span>Квартира № 458</span></h1>
+                <form id="w0" action="#" method="post">
+                    <input type="hidden" name="_csrf" value="">
+                    <div class="form-group field-contacbron-name required">
+                        <input type="text" id="contactsbron-name" class="form-control" name="ContactsBron[name]" maxlength="255" placeholder="Ваше имя">
+                        <div class="help-block"></div>
+                    </div>
+                    <div class="form-group field-contactsletter-mail required">
+                        <input type="text" id="contactsbron-phone" class="form-control" name="ContactsBron[mail]" maxlength="255" placeholder="+7 (___) ___-__-__">
+                        <div class="help-block"></div>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit">Отправить</button>
+                    </div>
+                    <p>Нажимая на кнопку, Вы принимаете <a href="#">Положение</a> и
+                        <a href="#">согласие</a> на обработку персональных данных.</p>
+                </form>
+            </div>
+        </div>
+    </div>
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script type="text/javascript" src="js/jquery.magnific-popup.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jQRangeSlider-min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    </body>
+</html>
+
+

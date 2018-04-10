@@ -1,0 +1,40 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'AAvanteLtDemiBold';
+  src: url("../fonts/AAvanteLtDemiBold.woff") format("woff"), url("../fonts/AAvanteLtDemiBold.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'AAvanteLtDemiBoldItalic';
+  src: url("../fonts/AAvanteLtDemiBoldItalic.woff") format("woff"), url("../fonts/AAvanteLtDemiBoldItalic.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'AAvanteLtLight';
+  src: url("../fonts/AAvanteLtLight.woff") format("woff"), url("../fonts/AAvanteLtLight.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'AAvanteLtLightItalic';
+  src: url("../fonts/AAvanteLtLightItalic.woff") format("woff"), url("../fonts/AAvanteLtLightItalic.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'fontawesome';
+  src: url("../fonts/fontawesome-webfont.eot");
+  src: url("../fonts/fontawesome-webfont.eot?#iefix") format("embedded-opentype");
+  src: url("../fonts/fontawesome-webfont.woff2") format("woff2");
+  src: url("../fonts/fontawesome-webfont.woff") format("woff");
+  src: url("../fonts/fontawesome-webfont.ttf") format("truetype");
+  src: url("../fonts/fontawesome-webfont.svg#fontawesome-webfont") format("svg"); }
+
+/*default style*/
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
